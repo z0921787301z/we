@@ -7,7 +7,7 @@ from datetime import datetime
 from humanfriendly import format_timespan, format_size, format_number, format_length
 import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib, urllib.parse
 botStart = time.time()
-cl = LINE("oagdaoke@itymail.com","djry9420")
+cl = LINE()
 cl.log(cl.authToken)
 k1 = LINE(cl.authToken)
 k2 = LINE(cl.authToken)
@@ -79,19 +79,7 @@ def logError(text):
     with open("errorLog.txt","a") as error:
         error.write("\n[%s] %s" % (str(time), text))
 def helpmessage():
-    helpMessage = """🔥  〘弑神 戰爭〙   🔥 
-🔥 Gc-查詢自己剩餘票數
-🔥 喵-蘿莉共鳴
-🔥 Speed-速度
-🔥 Join-分身入防
-🔥 @bye-解除防護
-🔥 Gadd @-新增群管
-🔥 Gdel @-刪除群管
-🔥 取消邀請-卡邀全體取消邀請
-🔥 標記-全體標記
-🔥 GM-查看本群管理者
-🔥 Banlist-黑單
-🔥 Adminlist-權限者清單
+    helpMessage = """🔥  skp 歡迎機   🔥 
 🔥 add_wc:(歡迎訊息)-新增群組歡迎訊息
 🔥 renew_wc:(歡迎訊息)-更新群組歡迎訊息
 🔥 del_wc-刪除群組歡迎訊息
@@ -101,34 +89,7 @@ def helpmessage():
 🔥 r 查看當前已讀"""
     return helpMessage
 def helpmessagetag():
-    helpMessageTag ="""🔥  〘弑神 戰爭〙   🔥
-🔥 Gadd @-新增群管
-🔥 取消邀請-卡邀全體取消邀請
-🔥 標記-全體標記
-🔥 Gdel @-刪除群管
-🔥 GM-查看本群管理者
-🔥 Rebot-重新啟動
-🔥 Tk @-多標踢人
-🔥 Gc mid-MID查票
-🔥 Add @-新增權限
-🔥 Del @-刪除權限
-🔥 A mid (times)-加票
-🔥 Ban:mid-MID黑單
-🔥 Ban-友資黑單
-🔥 Ban @-標注黑單
-🔥 Unban:mid-MID黑單
-🔥 Unban-友資黑單
-🔥 Unban @-標注黑單
-🔥 Gc-查詢自己剩餘票數
-🔥 喵-蘿莉共鳴
-🔥 Speed-速度
-🔥 Join-分身入防
-🔥 @bye-解除防護
-🔥 Banlist-黑單
-🔥 Adminlist-權限者清單
-🔥 Clear ban-清除黑單
-🔥 Kg-全群掃黑
-🔥 Kill ban-當前群組掃黑
+    helpMessageTag ="""🔥  skp 歡迎機   🔥
 🔥 add_wc:(歡迎訊息)-新增群組歡迎訊息
 🔥 renew_wc:(歡迎訊息)-更新群組歡迎訊息
 🔥 del_wc-刪除群組歡迎訊息
@@ -139,7 +100,7 @@ def helpmessagetag():
 🔥 r 查看當前已讀"""
     return helpMessageTag
 def helpn():
-    helpN = """🔥  〘弑神 戰爭〙   🔥
+    helpN = """🔥  sk-p 歡迎機   🔥
 🔥 Gc-查詢自己剩餘票數
 🔥 喵-蘿莉共鳴
 🔥 Speed-速度
