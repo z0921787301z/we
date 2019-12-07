@@ -7,8 +7,7 @@ from datetime import datetime
 from humanfriendly import format_timespan, format_size, format_number, format_length
 import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib, urllib.parse
 botStart = time.time()
-cl = LINE()
-cl.log(cl.authToken)
+cl = LINE("z0921787301z@gmail.com","mvp168")
 k1 = LINE(cl.authToken)
 k2 = LINE(cl.authToken)
 k3 = LINE(cl.authToken)
