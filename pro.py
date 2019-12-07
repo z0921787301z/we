@@ -134,7 +134,7 @@ def lineBot(op):
         if op.type == 5:
             cl.findAndAddContactsByMid(op.param1) #自動加好友
             cl.sendMessage(op.param1, "你好 {} 謝謝你加我為好友 ε٩(๑> ₃ <)۶з \n此機器為歡迎機器人 \n有興趣可以私以下友資購買".format(str(cl.getContact(op.param1).displayName)))
-            cl.sendMessage(op.param1, None, contentMetadata={'mid': 'u56d30ff9392a9dddbe7fcdec518d1894'}, contentType=13)
+            cl.sendMessage(op.param1, None, contentMetadata={'mid': 'u5b6b9bfd168dbdc9cd82d16a15a4921a'}, contentType=13)
         if op.type ==19:
             a = 0
             if op.param2 in ban["admin"] or op.param2 in ban["owners"]:
